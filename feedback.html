@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обратная связь | lemiy</title>
+</head>
+<body>
+    <header>
+        <h1>Напишите мне</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Обо мне</a></li>
+            <li><a href="portfolio.html">Работы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="feedback.html">Обратная связь</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Форма сообщения</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Ваши данные</legend>
+                    
+                    <label for="name">Имя *</label><br>
+                    <input type="text" id="name" name="name" required placeholder="Ваше имя"><br><br>
+
+                    <label for="email">Email *</label><br>
+                    <input type="email" id="email" name="email" required placeholder="name@example.com"><br><br>
+
+                    <label for="subject">Тема</label><br>
+                    <select id="subject" name="subject">
+                        <option value="general">Общий вопрос</option>
+                        <option value="work">Заказ работы</option>
+                        <option value="feedback">Отзыв о проекте</option>
+                        <option value="collab">Предложение о сотрудничестве</option>
+                    </select><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Сообщение</legend>
+                    
+                    <label for="message">Текст *</label><br>
+                    <textarea id="message" name="message" rows="6" cols="50" required placeholder="Ваше сообщение..."></textarea><br><br>
+
+                    <label>
+                        <input type="checkbox" name="subscribe" value="yes">
+                        Подписаться на обновления (опционально)
+                    </label><br><br>
+                </fieldset>
+
+                <button type="submit">Отправить сообщение</button>
+                <button type="reset">Очистить форму</button>
+            </form>
+            
+            <p><small>* — обязательные поля. Форма учебная: данные никуда не отправляются.</small></p>
+        </section>
+
+        <section>
+            <h2>Частые вопросы</h2>
+            <details>
+                <summary>Как быстро вы отвечаете?</summary>
+                <p>Обычно в течение 1–2 рабочих дней. Срочные вопросы лучше направлять в Telegram.</p>
+            </details>
+            
+            <details>
+                <summary>Работаете ли вы с международными заказчиками?</summary>
+                <p>Да, веду переписку на английском. Для сложных проектов привлекаю помощников в Южной Корее и Китае.</p>
+            </details>
+            
+            <details>
+                <summary>Можно ли посмотреть код ваших работ?</summary>
+                <p>Да, учебные проекты выложены на GitHub. Ссылка есть на странице «Контакты».</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="contacts.html"> < Другие способы связи</a> | <a href="index.html"> < На главную</a></p>
+    </footer>
+</body>
+</html>
